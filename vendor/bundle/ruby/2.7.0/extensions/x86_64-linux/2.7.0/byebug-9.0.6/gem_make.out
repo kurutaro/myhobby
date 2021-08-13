@@ -1,0 +1,44 @@
+current directory: /home/vagrant/RailsApp/myhobby/vendor/bundle/ruby/2.7.0/gems/byebug-9.0.6/ext/byebug
+/home/vagrant/.rbenv/versions/2.7.2/bin/ruby -I /home/vagrant/.rbenv/versions/2.7.2/lib/ruby/2.7.0 -r ./siteconf20210813-16443-8ilfna.rb extconf.rb
+creating Makefile
+
+current directory: /home/vagrant/RailsApp/myhobby/vendor/bundle/ruby/2.7.0/gems/byebug-9.0.6/ext/byebug
+make "DESTDIR=" clean
+
+current directory: /home/vagrant/RailsApp/myhobby/vendor/bundle/ruby/2.7.0/gems/byebug-9.0.6/ext/byebug
+make "DESTDIR="
+compiling breakpoint.c
+compiling byebug.c
+compiling context.c
+context.c: 関数 ‘call_with_debug_inspector’ 内:
+context.c:191:20: 警告: 互換性のないポインタ型から 1 番目の ‘rb_ensure’ の引数に渡しています [デフォルトで有効]
+                    (VALUE) data);
+                    ^
+In file included from /home/vagrant/.rbenv/versions/2.7.2/include/ruby-2.7.0/ruby.h:33:0,
+                 from byebug.h:4,
+                 from context.c:1:
+/home/vagrant/.rbenv/versions/2.7.2/include/ruby-2.7.0/ruby/ruby.h:1990:7: 備考: expected ‘VALUE (*)(VALUE)’ but argument is of type ‘VALUE (*)(struct call_with_inspection_data *)’
+ VALUE rb_ensure(VALUE(*)(VALUE),VALUE,VALUE(*)(VALUE),VALUE);
+       ^
+context.c:191:20: 警告: 互換性のないポインタ型から 3 番目の ‘rb_ensure’ の引数に渡しています [デフォルトで有効]
+                    (VALUE) data);
+                    ^
+In file included from /home/vagrant/.rbenv/versions/2.7.2/include/ruby-2.7.0/ruby.h:33:0,
+                 from byebug.h:4,
+                 from context.c:1:
+/home/vagrant/.rbenv/versions/2.7.2/include/ruby-2.7.0/ruby/ruby.h:1990:7: 備考: expected ‘VALUE (*)(VALUE)’ but argument is of type ‘VALUE (*)(struct call_with_inspection_data *)’
+ VALUE rb_ensure(VALUE(*)(VALUE),VALUE,VALUE(*)(VALUE),VALUE);
+       ^
+context.c: トップレベル:
+cc1: 警告: 認識できないコマンドラインオプション "-Wno-tautological-compare" です [デフォルトで有効]
+cc1: 警告: 認識できないコマンドラインオプション "-Wno-self-assign" です [デフォルトで有効]
+cc1: 警告: 認識できないコマンドラインオプション "-Wno-parentheses-equality" です [デフォルトで有効]
+cc1: 警告: 認識できないコマンドラインオプション "-Wno-constant-logical-operand" です [デフォルトで有効]
+cc1: 警告: 認識できないコマンドラインオプション "-Wno-cast-function-type" です [デフォルトで有効]
+compiling locker.c
+compiling threads.c
+linking shared-object byebug/byebug.so
+
+current directory: /home/vagrant/RailsApp/myhobby/vendor/bundle/ruby/2.7.0/gems/byebug-9.0.6/ext/byebug
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 byebug.so ./.gem.20210813-16443-1l0zhjd/byebug
