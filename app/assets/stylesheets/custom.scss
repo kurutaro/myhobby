@@ -47,7 +47,7 @@ h1, h2, h3, h4, h5, h6 {
 
     h1 {
       font-size: 3.5em;
-      letter-spacing: 10px;
+      letter-spacing: 3px;
       margin: 20px auto;
       text-align: center;
     }
@@ -67,6 +67,22 @@ h1, h2, h3, h4, h5, h6 {
       width:  180px;       /* ※縦横を同値に */
       height: 180px;       /* ※縦横を同値に */
     }
+
+    .box {
+      width: 80%;
+      padding: 0.5em 1em;
+      margin: 1em auto;
+      color: #5d627b;
+      background: white;
+      border-top: solid 10px #5d627b;
+      box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+
+      p {
+        margin: 0; 
+        padding: 0;
+      }
+    }
+
   }
 }
 
