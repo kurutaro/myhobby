@@ -12,30 +12,43 @@
     <p>1996.05.17</p>
 
     <div class="box">
-      <p>東京都八王子市出身。趣味は野球観戦、フットサル、ドライブ。社会人になってからカメラを購入し、愛車の撮影にも励んでいる。Ruby on RailsによるWEB開発学習を進める傍ら、自身のポートフォリオ作成も並行して行っていく予定。</p>
+      <p>東京都八王子市出身。現在は愛知県在住。趣味は野球観戦、フットサル、ドライブ。社会人になってからカメラを購入し、愛車の撮影にも励んでいる。Ruby on RailsによるWEB開発学習を進める傍ら、自身のポートフォリオ作成も並行して行っていく予定。</p>
     </div>
   </div>
+
   <div class="jumbotron">
 
     <h1>サイト一覧</h1>
-    <div class="card-group">
-      <div class="card">
-        <div class="card-body">
-          <div class="card-title">
-            <h5>card sample</h5>
-          </div>
-          <div class="card-text">
-            <p>This is a card sample.</p>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="card">
+            <%= image_tag("DSC_0137.JPG", alt: "Hamanako") %>
+            <div class="card-body">
+              <h5 class="card-title">CX-5のある生活</h5>
+              <p class="card-text">2021/06/06に念願だったCX-5を購入。趣味のカメラで愛車を撮影し、フォトグラフを作成</p>
+              <a href="#" class="btn btn-primary">フォトグラフへ</a>
+            </div> 
           </div>
         </div>
-      </div>
-      <div class="card">
-        <div class="card-body">
-          <div class="card-title">
-            <h5>card sample</h5>
+        <div class="col-lg-4">
+          <div class="card">
+            <%= image_tag("mc.JPG", alt: "Hamanako") %>
+            <div class="card-body">
+              <h5 class="card-title">Mr.Children</h5>
+              <p class="card-text">次に作成するアプリが決まるまで、ファンであるMr.Childrenのサイトへのリンクで代用中</p>
+              <a href="https://www.mrchildren.jp/" class="btn btn-primary">Mr.Children HPへ</a>
+            </div> 
           </div>
-          <div class="card-text">
-            <p>This is a card sample.</p>
+        </div>
+        <div class="col-lg-4">
+          <div class="card">
+            <%= image_tag("nagoya.JPG", alt: "Hamanako") %>
+            <div class="card-body">
+              <h5 class="card-title">Next Application</h5>
+              <p class="card-text">さらに次は何を作ろうか。考え中。ひとまず昨年作った愛知版グルメ記録アプリをリンクさせておく。</p>
+              <a href="https://aichi-gourmets.herokuapp.com/index" class="btn btn-primary">Aichi's Gourmetへ</a>
+            </div> 
           </div>
         </div>
       </div>
