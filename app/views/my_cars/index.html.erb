@@ -1,0 +1,22 @@
+<% provide(:title, "MyCar") %>
+
+<div class="mycar">
+  <div class="jumbotron">
+    <h1>Contents</h1>
+    <p id="new_page"><%= link_to '新規のフォトグラフを作成する', new_my_car_path %></p>
+
+    <div class="c-link-group">
+      <% @my_cars.each do |my_car| %>
+        <div class="c-link">
+          <div>
+            <%= link_to my_car, target: "_blank" do %>
+              <%= image_tag("DSC_0137.JPG", alt: "Hamanako") %>
+              <h2 class="card-title"><%= my_car.name %></h2>
+              <p class="card-text"><%= my_car.description %></p>
+            <% end %>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>

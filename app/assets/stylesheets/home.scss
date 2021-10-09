@@ -1,0 +1,70 @@
+
+.center {
+  text-align: center;
+
+  img {
+    width: 100%;
+  }
+
+  .jumbotron {
+    background-color: #FFFFFF;
+    width: 80%;
+    margin: 20px auto;
+    padding: 16px;
+
+    h1 {
+      font-size: 2.5em;
+      letter-spacing: 3px;
+      margin: 20px auto;
+    }
+    h2 {
+      font-size: 2.5em;
+      margin: 0 0 3px 0;
+    }
+
+    p {
+      font-size: 1em;
+      font-size: 1em;
+      margin: 0 auto;
+    }
+
+    #icon {
+      border-radius: 50%;  /* 角丸半径を50%にする(=円形にする) */
+      width:  180px;       /* ※縦横を同値に */
+      height: 180px;       /* ※縦横を同値に */
+    }
+
+    .box {
+      width: 80%;
+      padding: 0.5em 1em;
+      margin: 1em auto;
+      color: #5d627b;
+      background: white;
+      border-top: solid 10px #5d627b;
+      box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+
+      p {
+        margin: 0; 
+        padding: 0;
+      }
+
+    }
+    .container .row .col-lg-4 {
+      padding: 0 3%;
+      .card {
+        border: solid 1px #5d627b;
+        border-radius: 5px 5px 0 0;
+      img {
+        border-radius: 4px 4px 0 0;
+      }
+      .card-body {
+        padding: 5% 5%;
+        .btn {
+          margin-top: 10px;
+        }
+      }
+
+      }
+    }
+  }
+}
