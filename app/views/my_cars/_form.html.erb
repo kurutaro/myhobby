@@ -28,7 +28,7 @@
 
   <div class="field">
     <%= form.label :user_id_id %>
-    <%= form.text_field :user_id_id, id: :my_car_user_id_id %>
+    <%= form.collection_select :user_id, User.all, :id, :name, include_blank: "選択して下さい" %>
   </div>
 
   <div class="actions">

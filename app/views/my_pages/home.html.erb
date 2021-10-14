@@ -1,59 +1,83 @@
 <% provide(:title, "Home") %>
 
-<div class="center">
-	<%= image_tag("DSC_0137.JPG", alt: "Hamanako") %>
-
-  <div class="jumbotron">
- 
-    <h1>Profile</h1>
-    <%= image_tag("ICON.JPG", alt: "icon", id: "icon") %>
-    <p>はしだて　　　なおや</p>
-    <h2>橋立　直弥</h2>
-    <p>1996.05.17</p>
-
-    <div class="box">
-      <p>東京都八王子市出身。現在は愛知県在住。趣味は野球観戦、フットサル、ドライブ。社会人になってからカメラを購入し、愛車の撮影にも励んでいる。Ruby on RailsによるWEB開発学習を進める傍ら、自身のポートフォリオ作成も並行して行っていく予定。</p>
+<p id="mainImg"><%= image_tag("mainImg.jpg", alt: "") %></p>
+<!-- PROFILE -->
+<section id="sec01">
+  <header>
+    <h2><span>PROFILE</span></h2>
+    <h2 id="name">橋立　直弥(25歳)</h2>
+  </header>
+  <div class="innerS">
+    <p>&emsp;初めまして、なおやです。サイトをご覧いただきありがとうございます。社会人3年目、WEB開発歴2年目になりました。
+    趣味はカメラ、車関係、旅行、カフェ巡りなどなどです。本サイトではWEB開発を学びながら趣味を記録していこうと思います。
+    よければ覗いて行ってみてください。<p>
+  </div>
+  <div class="inner"></div>
+</section>
+<!-- // PROFILE -->
+<!-- PROJECT -->
+<section id="sec04">
+  <header>
+    <h2><span>PROJECT</span></h2>
+  </header>
+  <div class="inner">
+    <div class="article">
+      <%= image_tag("cx5_main.JPG", width: "370", height: "224", alt: "") %>
+      <p>愛車のフォトグラフを作成します</p>
+    </div>
+    <div class="article">
+      <%= image_tag("DSC_0952.JPG", width: "370", height: "224", alt: "") %>
+      <p>旅行の記録を作成します</p>
     </div>
   </div>
-
-  <div class="jumbotron">
-
-    <h1>サイト一覧</h1>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4">
-          <div class="card">
-            <%= image_tag("DSC_0137.JPG", alt: "Hamanako") %>
-            <div class="card-body">
-              <h5 class="card-title">CX-5のある生活</h5>
-              <p class="card-text">2021/06/06に念願だったCX-5を購入。趣味のカメラで愛車を撮影し、フォトグラフを作成</p>
-              <a href="#" class="btn btn-primary">フォトグラフへ</a>
-            </div> 
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="card">
-            <%= image_tag("mc.JPG", alt: "Hamanako") %>
-            <div class="card-body">
-              <h5 class="card-title">Mr.Children</h5>
-              <p class="card-text">次に作成するアプリが決まるまで、ファンであるMr.Childrenのサイトへのリンクで代用中</p>
-              <a href="https://www.mrchildren.jp/" class="btn btn-primary">Mr.Children HPへ</a>
-            </div> 
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="card">
-            <%= image_tag("nagoya.JPG", alt: "Hamanako") %>
-            <div class="card-body">
-              <h5 class="card-title">Next Application</h5>
-              <p class="card-text">さらに次は何を作ろうか。考え中。ひとまず昨年作った愛知版グルメ記録アプリをリンクさせておく。</p>
-              <a href="https://aichi-gourmets.herokuapp.com/index" class="btn btn-primary">Aichi's Gourmetへ</a>
-            </div> 
-          </div>
-        </div>
-      </div>
-    </div>
-
+</section>
+<!-- // PROJECT -->
+<!-- GALLERY -->
+<section id="sec02">
+  <header>
+    <h2><span>GALLERY</span></h2>
+  </header>
+  <ul id="gallery">
+    <li><%= image_tag("cx5_hamanako.jpg", width: "360", height: "350", alt: "") %></li>
+    <li><%= image_tag("sky.jpg", width: "360", height: "350", alt: "") %></li>
+    <li><%= image_tag("sea.jpg", width: "360", height: "350", alt: "") %></li>
+    <li><%= image_tag("biwako.jpg", width: "360", height: "350", alt: "") %></li>
+    <li><%= image_tag("post.jpg", width: "360", height: "350", alt: "") %></li>
+    <li><%= image_tag("cx5_side.jpg", width: "360", height: "350", alt: "") %></li>
+    <li class="full"><%= image_tag("DSC_0137.JPG", width: "1080", height: "695", alt: "") %></li>
+    <li><%= image_tag("sheep2.jpg", width: "360", height: "350", alt: "") %></li>
+    <li><%= image_tag("sheep.jpg", width: "360", height: "350", alt: "") %></li>
+    <li><%= image_tag("beer.jpg", width: "360", height: "350", alt: "") %></li>
+    <li><%= image_tag("nijojo.jpg", width: "360", height: "350", alt: "") %></li>
+    <li><%= image_tag("toji.jpg", width: "360", height: "350", alt: "") %></li>
+    <li><%= image_tag("morizo.jpg", width: "360", height: "350", alt: "") %></li>
+  </ul>
+</section>
+<!-- // GALLERY -->
+<!-- OTHER -->
+<section id="sec03">
+  <header>
+    <h2><span>OTHER</span></h2>
+  </header>
+  <div class="inner">
+    <ul class="col4">
+      <li>
+        <a href="https://www.mrchildren.jp/" target="_blank"><p class="img"><%= image_tag("mc.JPG", width: "168", height: "168", alt: "") %></p></a>
+        <p style="text-align: center;">Mr.Children</p>
+      </li>
+      <li>
+        <a href="https://www.apbank.jp/" target="_blank"><p class="img"><%= image_tag("ap.JPG", width: "168", height: "168", alt: "") %></p></a>
+        <p style="text-align: center;">ap bank</p>
+      </li>
+      <li>
+        <a href="https://www.softbankhawks.co.jp/" target="_blank"><p class="img"><%= image_tag("softbank.JPG", width: "168", height: "168", alt: "") %></p></a>
+        <p style="text-align: center;">ソフトバンクホークス</p>
+      </li>
+      <li>
+        <p class="img"><%= image_tag("nagoya.JPG", width: "168", height: "168", alt: "") %></p>
+        <p style="text-align: center;">愛知</p>
+      </li>
+    </ul>
   </div>
-</div>
-
+</section>
+<!-- // BRAND -->

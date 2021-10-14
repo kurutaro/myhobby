@@ -1,21 +1,26 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title><%= yield(:title) %> | Naoya's hobbies</title>
-    <%= csrf_meta_tags %>
+<html lang='ja'>
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="最新技術と自然との調和を目指す">
+	<meta name="viewport" content="width=device-width">
+  <title><%= yield(:title) %> | Naoya's hobbies</title>
+  <%= csrf_meta_tags %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= javascript_include_tag 'application'%>
 
-    <%= render 'layouts/shim' %>
-  </head>
+  <%= render 'layouts/shim' %>
+</head>
 
-  <body>
+<body id="top">
+  <div id="wrapper">
+    <%= javascript_include_tag 'application' %>
     <%= render 'layouts/header' %>
-    <div class="container" id="body">
+		<div id="content">
       <%= yield %>
+      <%= render 'layouts/footer' %>
     </div>
-    <%= render 'layouts/footer' %>
-  </body>
-</html>
+  </div>
+</body>
 </html>
