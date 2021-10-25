@@ -29,15 +29,10 @@ $(function(){
 	});
 	
 	$('.panel').hide();
-	$('#menuWrap').toggle(function(){
+	$('#menuWrap').click(function(){
 		$(this).next().slideToggle();
 		$('#menuBtn').toggleClass('close');
-	},
-	function(){
-		$(this).next().slideToggle();
-		$('#menuBtn').removeClass('close');
 	});
-
 });
 
 

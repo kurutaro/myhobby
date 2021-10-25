@@ -6,16 +6,14 @@
 	<meta name="viewport" content="width=device-width">
   <title><%= yield(:title) %> | Naoya's hobbies</title>
   <%= csrf_meta_tags %>
-
-  <%= stylesheet_link_tag    'application', media: 'all' %>
-  <%= javascript_include_tag 'application'%>
-
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   <%= render 'layouts/shim' %>
+
 </head>
 
 <body id="top">
   <div id="wrapper">
-    <%= javascript_include_tag 'application' %>
     <%= render 'layouts/header' %>
 		<div id="content">
       <%= yield %>
